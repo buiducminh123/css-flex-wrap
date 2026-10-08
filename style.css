@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+/* Container theo ví dụ tổng hợp */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 300px;
+    gap: 10px;
+    border: 2px solid black;
+}
+
+.item {
+    width: 180px;
+    height: 80px;
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+    box-sizing: border-box;
+    /* SỬA LỖI: để 3 item vừa 1 hàng */
+}
+
+/* 4 giá trị cần thử */
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.initial {
+    flex-wrap: initial;
+}
+
+/* Tô màu khác nhau cho dễ phân biệt */
+.wrap-reverse .item {
+    background-color: lightcoral;
+}
+
+.initial .item {
+    background-color: lightyellow;
+}
+
+.nowrap .item {
+    background-color: lightgreen;
+}
